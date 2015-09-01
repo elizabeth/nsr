@@ -1,0 +1,153 @@
+/*
+*	Style page for Needlessly Small Rod
+*/
+
+body {
+	background: no-repeat;
+	background-attachment: fixed;
+	background-image: url(bg.jpg);
+	background-position: left bottom;
+	background-size: contain;
+	font-family: "Century Gothic", "Courier New", "Courier";
+	font-size: 1.5em;
+}
+
+.no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+
+h1 {
+	letter-spacing: 2px;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#dialog {
+	display: none;
+}
+
+.col-md-3 {
+	max-width: 19%;
+	min-width: 19%;
+	position: fixed;
+}
+
+.col-md-3 li {
+	background-color: white;
+}
+
+#home {
+	color: #FFFFFF;
+	background-color: #A037BF;
+}
+
+#main {
+	font-size: 16px;
+	left: 19%;
+	position: relative;
+	width: 64%;
+}
+
+#selectRole {
+	font-size: 80%;
+	height: 20%;
+	width: 80%;
+}
+
+#submit {
+	font-size: 80%;
+	position: relative;
+	margin-top: 5px;
+	width: 80%;
+}
+
+#champIcons img {
+	cursor: pointer;
+	margin: 3px;
+	width: 7%;
+}
+
+#champIcons img:hover {
+	border: 2px dotted #337AB7;
+}
+
+.selected {
+	border: 3px solid #A037BF;
+}
+
+#select {
+	font-size: 1.5em;
+}
+
+#role {
+	bottom: 5%;
+	float: left;
+	left: 20%;
+	position: absolute;
+}
+
+#map {
+	left: 50%;
+	position: relative;
+	right: 20%;
+	top: 15%;
+	width: 25%;
+}
+
+#mapImg {
+	border-radius: 10px;
+	height: 100%;
+	right: 0;
+	width: 100%;
+}
+
+#marker {
+	border-radius: 4px;
+	float: right;
+	height: 13%;
+	left: 10%;	
+	position: absolute;
+	top: 10%;
+	width: 13%;
+}
+
+.btn-info {
+	background-color: #A037BF;
+}
+
+.btn-info:hover {
+	background-color: #337AB7;
+}
+
+.open>.dropdown-toggle.btn-info:focus {
+	background-color: #A037BF;
+}
+
+#right {
+	position: absolute;
+	left:100%;
+	top: 15%;
+	width: 25%;
+}
+
+#right img {
+	height: 100%;	
+	width: 100%;
+}
+
+#bottom {
+	bottom: 0;
+	clear: both;
+	height: 100px;
+	left: 0;
+	margin-top: 100px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}

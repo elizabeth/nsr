@@ -1,0 +1,46 @@
+/*
+*	Style page for Builds page for Needlessly Small Rod
+*/
+
+#home {
+	background-color: white;
+	color: #337ab7;
+}
+
+#home:hover {
+	background-color: #EBE9E9;
+}
+
+h3 {
+	color: #A037BF;
+}
+
+#sum {
+	color: #808080;
+	letter-spacing: -1px;
+}
+
+#rankedButton {
+	left: 75%;
+	position: absolute;
+}
+
+.build img{
+	height: 10%;
+	padding: 1px;
+	width: 10%;
+}
+
+#right img {
+	height: 100%;
+	width: 100%;
+}
+
+#beforeNorms, #afterNorms, #beforeRanked, #afterRanked{
+	float: right;
+	width: 50%;
+}
+
+#ranked {
+	display: none;
+}

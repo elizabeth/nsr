@@ -1,0 +1,36 @@
+/*
+*	Style page for AP Item Changes page of Needlessly Small Rod
+*/
+
+img {
+	float: left;
+	padding-right: 10px;
+}
+
+#changes {
+	background-color: #A037BF;
+	color: #FFFFFF;	
+}
+
+#home {
+	background-color: white;
+	color: #337ab7;
+}
+
+#home:hover {
+	background-color: #EBE9E9;
+}
+
+h3 {
+	color: #A037BF;
+}
+
+.category {
+	color: #808080;
+	letter-spacing: -1px;
+}
+
+.new {
+	color: green;
+	font-weight: bold;
+}

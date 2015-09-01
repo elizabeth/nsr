@@ -1,0 +1,31 @@
+na5.11NormMatchInfo.json
+
+Json build for champions in all matches in NA Norm and their items, wins, and names
+every attribute in Match Info is a list of 10 things. The order of the lists is very important, the zero position in every list is participant0, 1st position etc...
+
+
+Match ID = single value
+Match Info = has four attributes, list of match info
+	champId = list of 10 ints,champion id used to find champ name and other info
+	winner = list of 10 boolean,values, determins if the champ was a winner
+	champItems = 2d array list of 10 sets of 6 items, each contains an itemID
+	championName = list of 10 names in string format.
+	lane = list of 10 to determine lane for each participant
+	role = list of 10 to determine role for each participant
+
+
+na5.11NormBuilds.json
+
+champId = for each champ
+	lane = top, middle, bottom, jungle
+		build = item build for a win in this lane with this champ in list format
+		magicDamageDealtToChampions
+		magicTaken
+		physicalDamageDealtToChampions
+		physicalTaken
+		totalDamangeDealtToChampions
+		totalDamageTaken
+		trueDamageDealtToChampions
+		trueDamageTaken
+		totalHeal
+

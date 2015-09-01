@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<!-- 
+		Documentation page for Needlessly Small Rod
+	-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Documentation - NSR</title>
+
+		<!-- Twitter Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
+
+ 		<link href="../static/styles.css" type="text/css" rel="stylesheet" />
+ 		<link href="documentation.css" type="text/css" rel="stylesheet" />		
+ 		
+		<link href="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/642.png" type="image/png" rel="shortcut icon" />
+	</head>
+
+	<body>
+		<?php include '../static/nsrCommon.php'; ?>
+	
+		<?php side_nav(); ?>
+		
+		<div id="main">
+			<h1>Documentation</h1>
+
+			<p>Needlessly Small Rod (NSR) was created for the Riot API Challenge 2.0, which took place from August 10 - August 31, 2015. NSR was created by Joseph 'Tanglewreak' Bonilla and Elizabeth 'Lizabeth' Duong.</p>
+
+			<p>The purpose of NSR is to demonstrate the changes in AP item usage by showing players the best builds for each champion and lane, both before and after patch 5.13 of the AP item changes.</p>
+
+			<p>Builds are obtained based on the given set of matches, common builds, and highest winrate for each lane. Matches are from normals and ranked Summoner's Rift from both patch 5.11 and patch 5.14. Some of the provided suggested builds may seem unconventional; However, this is due to some of the restrictions and accuracy of data from the Riot API.</p>
+
+			<p>Data from the Riot API was obtained between 8/10-8/31, 2015. How we obtained this data was through the use of development keys provided by Riot. We acquired four types of information: normal and ranked match data from patch 5.11 and patch 5.14.</p>
+
+			<p>Credit to Jacob Leighty (NA: Leaves) for the creating our background image.</p>
+
+			<p>Link to <a href="https://github.com/lizabethd/nsr">Github.</a></p>
+		</div>
+
+		<div id="bottom">
+			<?php footer(); ?>
+		</div>
+		
+	</body>
+</html>

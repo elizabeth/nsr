@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<!-- 
+		Homepage for Needlessly Small Rod
+	-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Needlessly Small Rod</title>
+
+		<!-- Twitter Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
+
+ 		<!-- jQuery -->
+ 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+ 		<link href="static/styles.css" type="text/css" rel="stylesheet" />
+ 		
+		<script language="javascript" type="text/javascript" src="static/index.js"></script>
+ 		
+		<link href="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/642.png" type="image/png" rel="shortcut icon" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="dialog">
+				<span id="question"></span>
+				<form>
+					<input id="rad1" name="teemo" type="radio"><label id="answer1"></label><br>
+					<input id="rad2" name="teemo" type="radio"><label id="answer2"></label><br>
+					<input id="rad3" name="teemo" type="radio"><label id="answer3"></label>
+				</form>
+			</div>
+
+			<?php include 'static/nsrCommon.php'; ?>
+			
+			<?php side_nav(); ?>
+			
+			<div id="main">
+				<h1>Needlessly Small Rod</h1>
+
+				<div id="champIcons"></div>
+	        	<div id="right"></div>
+
+				<br>
+				<div id="select">			
+					<div id="role">
+						Choose a role:<br>
+						<select id="selectRole" class="form-control">
+						    <option value="Top">Top</option>
+						    <option value="Middle">Mid</option>
+						    <option value="Jungle">Jungle</option>
+						    <option value="Bottom">Ad Carry</option>
+						    <option value="Bottom">Support</option>
+						</select>   
+
+			        	<input type="submit" id="submit" class="btn btn-info" value="Find a Build">
+			        </div>
+
+			        <div id="map"><img id="mapImg" src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/map/map11.png">
+			        <img id="marker" src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/642.png"></div>
+		        </div>
+		        
+			</div>
+
+			<div id="bottom">
+				<?php footer(); ?>
+			</div>
+		</div>	
+	</body>
+</html>

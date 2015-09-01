@@ -1,0 +1,18 @@
+/*
+*	Style page for documentation page of Needlessly Small Rod
+*/
+
+#about {
+	background-color: #A037BF;
+	color: #FFFFFF;	
+}
+
+
+#home {
+	background-color: white;
+	color: #337ab7;
+}
+
+#home:hover {
+	background-color: #EBE9E9;
+}
