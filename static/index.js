@@ -23,7 +23,7 @@
 		var answer = null;
 		var rand = Math.floor((Math.random()*10) + 1);
 
-		$.getJSON("/../trivia.json", function(data) {
+		$.getJSON("trivia.json", function(data) {
 			question = data["Question"+rand];
 			$("#question").html(question["Question"]);
 			var numsArray = ["Answer1", "Answer2", "Answer3"];
@@ -74,7 +74,7 @@
 	// Retrieve JSON data of champions and on success, show the champion icons
 	function champIcons() {
 		$.ajax({
-		    url: "/champions/champs.json",
+		    url: "champions/champs.json",
 		    type: "POST",
 		    dataType: "json",
 	        })
@@ -175,7 +175,7 @@
 			var key = championsKeys[championsNames.indexOf(name)];
 			var role = $("#selectRole").val();
 
-			window.location.replace("../builds/index.php?id="+id+"&name="+name+
+			window.location.replace("builds/index.php?id="+id+"&name="+name+
 				"&key="+key+"&role="+role);
 		}
 	}

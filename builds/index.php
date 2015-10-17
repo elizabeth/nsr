@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<!-- 
 		Builds Page for Needlessly Small Rod
 	-->
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<title>Builds - NSR</title>
 
-		<!-- Twitter Bootstrap -->
+		<!-- Twitter Bootstrap Stylesheet -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
 
- 		<!-- jQuery -->
+ 		<!-- jQuery Stylesheet-->
  		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
 
  		<link href="../static/styles.css" type="text/css" rel="stylesheet" />		
  		<link href="builds.css" type="text/css" rel="stylesheet" />
 
-		<script language="javascript" type="text/javascript" src="builds.js"></script>
- 		
+ 		<!-- Favicon -->
 		<link href="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/642.png" type="image/png" rel="shortcut icon" />
 	</head>
 
@@ -41,22 +35,22 @@
 			
 			<div id="main">
 				<h1><?=$name?></h1>
-				<h3><?= $role ?> Lane</h3>
+				<h2><?= $role ?></h2>
 
 				<p id="sum">Builds and stats before and after AP item changes of Patch 5.13.
 					<button id="rankedButton" type="button" class="btn btn-default">View Ranked</button>
 				</p>
 
 				<div id="norms" class="build">
-				Normals<br>
-					<div id="beforeNorms">Before:<br></div>				
+				<h3>Normals</h3>
 					<div id="afterNorms">After:<br></div>				
+					<div id="beforeNorms">Before:<br></div>				
 				</div>
 
 				<div id="ranked" class="build">
-				Ranked<br>
-					<div id="beforeRanked">Before:<br></div>
+				<h3>Ranked</h3>
 					<div id="afterRanked">After:<br></div>
+					<div id="beforeRanked">Before:<br></div>
 				</div>
 
 	        	<div id="right"><img id=<?= $id?>
@@ -69,5 +63,16 @@
 				<?php footer(); ?>
 			</div>
 		</div>	
+		
+		<!-- jQuery library -->
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+		<!-- Twitter Bootstrap JavaScript -->
+	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<!-- JavaScript -->
+		<script src="builds.js"></script>
 	</body>
 </html>

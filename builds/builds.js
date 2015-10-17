@@ -11,7 +11,15 @@
 	function builds() {
 		var beforeBuilds = {};
 		var id = $("#right img").attr("id");
-		var role = $("h3").html().replace(' Lane', '').toUpperCase();
+		var role = $("h2").html().toUpperCase();
+
+		if (role == "TOP") {
+			$("h2").html("Top Lane");
+		} else if (role == "MIDDLE") {
+			$("h2").html("Mid Lane");
+		} else if (role =="BOTTOM") {
+			$("h2").html("Bot Lane");
+		}
 
 		// Get before normal builds
 		getBuild("na5.11NormBuilds.json", id, role, "beforeNorms");
@@ -39,13 +47,22 @@
 				}
 			}
 			var p = document.createElement("p");
-			p.innerHTML = "<br>Magic Damage Dealt to Champions: " +
-			lane[1] + "<br>Magic Damage Taken: " + lane[2] +
-			"<br>Physical Damage Dealt to Champions: " + lane[3] +
-			"<br>Physical Damage Taken: " + lane[4] + "<br>Total Damage Dealt to Champions: " +
-			lane[5] + "<br>Total Damage Taken: " + lane[6] + "<br>True Damage Dealt to Champions: " +
-			lane[7] + "<br>True Damage Taken: " + lane[8] + "<br>Total Heal: " + lane[9];
-			
+			var span1 = document.createElement("span");
+			var span2 = document.createElement("span");
+			$(span2).addClass("right");
+
+			p.innerHTML = "<br>";
+			span1.innerHTML = "Magic Damage Dealt to Champions:<br>Magic Damage Taken:" +
+				"<br>Physical Damage Dealt to Champions: <br>Physical Damage Taken:" +
+				"<br>Total Damage Dealt to Champions:<br>Total Damage Taken:<br>True Damage Dealt to Champions:" +
+				"<br>True Damage Taken:<br>Total Heal:";
+
+			span2.innerHTML = lane[1] + "<br>" + lane[2] + "<br>" + lane[3] + "<br>" + lane[4] + 
+			"<br>" + lane[5] + "<br>" + lane[6] + "<br>" + lane[7] + "<br>" + lane[8] + "<br>" + lane[9]; 
+
+			$(p).append(span1);
+			$(p).append(span2);			
+
 			$("#"+div_id).append(p);			
 		});
 	}

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<!-- 
 		Documentation page for Needlessly Small Rod
 	-->
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<title>Documentation - NSR</title>
 
-		<!-- Twitter Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
+		<!-- Twitter Bootstrap Stylesheet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">		
 
  		<link href="../static/styles.css" type="text/css" rel="stylesheet" />
  		<link href="documentation.css" type="text/css" rel="stylesheet" />		
@@ -30,7 +28,9 @@
 
 			<p>The purpose of NSR is to demonstrate the changes in AP item usage by showing players the best builds for each champion and lane, both before and after patch 5.13 of the AP item changes.</p>
 
-			<p>Builds are obtained based on the given set of matches, common builds, and highest winrate for each lane. Matches are from normals and ranked Summoner's Rift from both patch 5.11 and patch 5.14. Some of the provided suggested builds may seem unconventional; However, this is due to some of the restrictions and accuracy of data from the Riot API.</p>
+			<p>Upon visiting the main page, users are tested with a question to test their knowledge of the AP item changes that occurred in Patch 5.13. If the question is answered correctly, the user is allowed access to the page where they can choose a champion and lane to find builds and stats for. Otherwise, the user is sent to a page documenting the AP item changes.</p>
+
+			<p>Builds are obtained based on the given set of matches, common builds, and highest winrate for each lane. AD Carry and Support are considered Bot lane. Matches are from normals and ranked Summoner's Rift from both patch 5.11 and patch 5.14. Some of the provided suggested builds may seem unconventional; However, this is due to some of the restrictions and accuracy of data from the Riot API.</p>
 
 			<p>Data from the Riot API was obtained between 8/10-8/31, 2015. How we obtained this data was through the use of development keys provided by Riot. We acquired four types of information: normal and ranked match data from patch 5.11 and patch 5.14.</p>
 
@@ -43,5 +43,8 @@
 			<?php footer(); ?>
 		</div>
 		
+		<!-- Twitter Bootstrap JavaScript -->
+	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</body>
 </html>

@@ -12,6 +12,10 @@
 }
 
 h3 {
+	color: #5bc0de;
+}
+
+h2 {
 	color: #A037BF;
 }
 
@@ -39,6 +43,18 @@ h3 {
 #beforeNorms, #afterNorms, #beforeRanked, #afterRanked{
 	float: right;
 	width: 50%;
+}
+
+span {
+	float: left;
+}
+
+.caret {
+	float: none;
+}
+
+.right {
+	text-align: right;
 }
 
 #ranked {
