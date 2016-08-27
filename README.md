@@ -3,4 +3,4 @@ Submission for the 2015 Riot API Challenge 2.0
 
 [live site] (http://luludust.com/nsr)
 
-Further documentation found on the [documentation webpage] (http://nsr.lizabethd.com/documentation/).
+Further documentation found on the [documentation webpage] (http://luludust.com/documentation/).
