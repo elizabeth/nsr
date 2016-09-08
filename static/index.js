@@ -53,7 +53,7 @@
 						if (checked == answer) {
 							$(this).dialog("close");							
 						} else {
-							window.location.replace("http://nsr.lizabethd.com/apchanges/");
+							window.location.href = "apchanges";
 						}
 					}
 				}
@@ -175,8 +175,8 @@
 			var key = championsKeys[championsNames.indexOf(name)];
 			var role = $("#selectRole").val();
 
-			window.location.replace("builds/index.php?id="+id+"&name="+name+
-				"&key="+key+"&role="+role);
+			window.location.href = "builds/index.php?id="+id+"&name="+name+
+				"&key="+key+"&role="+role;
 		}
 	}
 
